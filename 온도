@@ -1,0 +1,13 @@
+baseTemp = 29
+step = 60
+stepTemp = 0.8
+
+height = int(input('고도입력 : '))
+
+targetTemp = baseTemp - (height // step * 0.8)
+
+if height % step != 0:
+    targetTemp -= stepTemp
+
+print('지면온도 : {}'.format(baseTemp))
+print('고도 {}m의 기온 : {}'.format(height, targetTemp))
