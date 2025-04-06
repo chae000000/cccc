@@ -1,0 +1,16 @@
+myage = int(input('나의 입력 : '))
+# 1,6 월 2,7 화 3,8 수 4,9 목 5,0 금
+if myage <= 19 or myage >= 65:
+    year = int(input('출생 연도 끝자리 : '))
+    if year == 1 or year == 6:
+        print('월요일 접종 가능!!')
+    elif year == 2 or year == 7:
+        print('화요일 접종 가능!!')
+    elif year == 3 or year == 8:
+        print('수요일 접종 가능!!')
+    elif year == 4 or year == 9:
+        print('목요일 접종 가능!!')
+    elif year == 5 or year == 0:
+        print('금요일 접종 가능!!')
+else:
+    print('하반기 일정 확인하세요.')
