@@ -1,0 +1,12 @@
+money = int(input('금액 입력 : '))
+rate = float(input('이율 입력 : '))
+period = int(input('기간 입력 : '))
+targetmoney = money
+for i in range(period):
+    targetmoney += (targetmoney * rate * 0.01)
+targetmoneyformet = format(int(targetmoney), ',')
+print('-' * 30)
+print('이율 : {}%'.format(rate))
+print('원금 : {}원'.format(format(money, ',')))
+print('{}년 후 금액 : {}원'.format(period, targetmoneyformet))
+print('-' * 30)
