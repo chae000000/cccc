@@ -1,0 +1,9 @@
+import datetime
+today = datetime.datetime.today()
+myAge = input('나이 입력 : ')
+if myAge.isdigit():
+    afterAge = 100 - int(myAge)
+    myhundred = today.year + afterAge
+    print('{}년({}년후)에 100살!!'.format(myhundred, afterAge))
+else:
+    print('잘못 입력했습니다.')
